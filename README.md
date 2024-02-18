@@ -24,7 +24,7 @@ KYL Blog Project is a web application developed to create a blog focused on O£I
 - **Focus Management**: Focus is managed properly to ensure that keyboard users can navigate the site efficiently.
 
 ## Deployment
-The project is deployed on [Vercel]([https://vercel.com/](https://kyl-bfsormsxd-nayanle2.vercel.app)), a cloud platform for static sites and serverless functions. The deployment process is automated, and the application is continuously monitored for performance and accessibility.
+The project is deployed on [Vercel](https://kyl-bfsormsxd-nayanle2.vercel.app), a cloud platform for static sites and serverless functions. The deployment process is automated, and the application is continuously monitored for performance and accessibility.
 
 ## How to Run Locally
 1. Clone the repository: `git clone https://github.com/yourusername/kyl-blog.git`
