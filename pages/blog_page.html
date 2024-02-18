@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYL - Blog</title>
+    <meta name="description" content="A blog about O£IL music.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="style.css">-->
+</head>
+<body class="bg-gray-100">
+<div class="container mx-auto py-8">
+    <header class="flex justify-between items-center m-6 md:mx-2">
+        <div class="flex justify-between items-center max-w-36 max-h-32">
+            <img src="/static/assets/imgs/Homme sans.jpeg" alt='Cover of the music "KYL" representing a character stuck in a TV' class="rounded h-16 w-16 md:h-20 md:w-20" width="100" height="100">
+            <h1 class="cursor-default text-2xl font-bold ml-2 text-gray-700">KYL</h1>
+        </div>
+        <button id="logout_button" class="text-lg md:text-2xl font-bold text-gray-700 hover:text-red-500 hidden" aria-label="Logout"></button>
+    </header>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="articles-container">
+        <!-- Articles seront ajoutés dynamiquement ici -->
+    </div>
+</div>
+
+<div class="overlay hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50" aria-hidden="true"></div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden article-modal hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 w-80 md:w-auto max-w-90 max-h-90 overflow-y-auto z-50" aria-modal="true" role="dialog" aria-labelledby="article-modal-title">
+    <img class="w-80 object-cover rounded-md" id="article-model-image">
+    <button class="close-btn absolute top-2 right-2 cursor-pointer text-3xl absolute top-0 right-0 w-6 h-6 flex justify-center items-center hover:text-red-500" aria-label="Close the window"><span class="block">&times;</span></button>
+    <div class="p-2 md:p-4 w-80">
+        <h2 id="article-modal-title" class="text-xl font-semibold text-gray-800 mb-2" aria-label="Article Title"></h2>
+        <p class="text-gray-600" id="article-modal-desc" aria-label="Article Description"></p>
+        <div class="article-content-modal"></div>
+    </div>
+</div>
+
+
+<script src="/static/scripts/blog_script.js"></script>
+</body>
+</html>

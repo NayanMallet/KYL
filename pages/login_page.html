@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYL - Login</title>
+    <meta name="description" content="Login page for KYL">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col justify-between h-screen">
+<div class="container mx-auto py-8">
+    <header class="flex justify-between items-center m-6 md:mx-2">
+        <div class="flex justify-between items-center max-w-36 max-h-32">
+            <img src="/static/assets/imgs/Homme sans.jpeg" alt='Cover of the music "KYL" representing a character stuck in a TV' class="rounded h-16 w-16 md:h-20 md:w-20" width="100" height="100">
+            <h1 id="page-title" class="cursor-default text-2xl font-bold ml-2 text-gray-700" aria-label="Page Title">KYL</h1>
+        </div>
+        <p id="register_link" role="button" tabindex="5" class="cursor-pointer text-lg md:text-2xl font-bold text-gray-700 hover:text-blue-500" onclick="toggleSignup(event)" onkeydown="handleKeydown(event)" aria-label="Register Link">REGISTER</p>
+    </header>
+</div>
+<main aria-labelledby="page-title">
+    <div class="flex justify-center items-center h-full w-full my-auto">
+        <form action="" class="py-4 px-8 bg-white rounded-lg shadow-2xl w-3/4 md:w-1/3" method="post" id="form_login">
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="username" aria-label="Username Label">Username</label>
+                <input tabindex="1" class="border rounded w-full py-2 px-3 text-gray-700" id="username" name="username" type="text" placeholder="Enter your username" aria-label="Username input" required>
+            </div>
+            <div class="mb-4 hidden" id="email_box">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="email" aria-label="Email Label">E-mail</label>
+                <input tabindex="2" class="border rounded w-full py-2 px-3 text-gray-700" id="email" name="email" type="email" placeholder="Enter your email" aria-label="Email input">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="password" aria-label="Password Label">Password</label>
+                <input tabindex="3" class="border rounded w-full py-2 px-3 text-gray-700" id="password" name="password" type="password" placeholder="Enter your password" aria-label="Password" required>
+            </div>
+            <div class="flex justify-center">
+                <button tabindex="4" id="login_button" class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded" type="submit" aria-label="Login Button">Login</button>
+            </div>
+        </form>
+    </div>
+</main>
+<footer>
+    <div class="container mx-auto py-8">
+        <div class="flex justify-center items-center">
+            <p class="cursor-default text-gray-700" aria-label="Footer Text">KYL - 2024</p>
+        </div>
+    </div>
+</footer>
+<script src="/static/scripts/login_script.js"></script>
+</body>
+</html>
