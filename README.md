@@ -1,9 +1,9 @@
 # KYL Blog Project
 
-![image](https://github.com/NayanMallet/KYL/assets/81246812/6744da3d-81bb-440c-b15b-163211d6572f)
-
 ## Overview
 KYL Blog Project is a web application developed to create a blog focused on O£IL music. The goal of this project was to implement accessibility features and best practices to ensure an inclusive and user-friendly experience for all users.
+
+![image](https://github.com/NayanMallet/KYL/assets/81246812/6744da3d-81bb-440c-b15b-163211d6572f)
 
 ## Features
 - **Accessible Design**: The website is designed with accessibility in mind, following WCAG 2.0 guidelines to ensure that users with disabilities can access and navigate the content easily.
