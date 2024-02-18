@@ -29,5 +29,9 @@ The project is deployed on [Vercel](https://vercel.com/), a cloud platform for s
 ## How to Run Locally
 1. Clone the repository: `git clone https://github.com/yourusername/kyl-blog.git`
 2. Install dependencies: `npm install`
-3. Start the server: `npm start`
-4. Access the application in your web browser: `http://localhost:3000`
+3. Setup your supabase database on [Supabase](https;//supabase.com/)
+4. Create an .env file with your credentials: 
+`SUPABASE_URL=
+ SUPABASE_KEY=`
+6. Start the server: `npm start`
+7. Access the application in your web browser: `http://localhost:3000`
